@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,49 +8,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/192db38860.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
-    <title>OhMyFood</title>
+    <title>OhMyFood!</title>
 </head>
+
 <body>
     <header>
-        <img src="images/logo/ohmyfood.png" alt="OH-MY-FOOD" />
+        <div class="flex flex-justify--center">
+        <img class="logo" src="images/logo/ohmyfood.png" alt="OH-MY-FOOD" />
+        </div>
     </header>
     <main>
-        <section>
-            <div>
+        <section class="flex flex--col flex-align--center">
+            <div class="flex flex--row place">
                 <i class="fas fa-map-marker-alt"></i>
                 <p>Paris, Belleville</p>
             </div>
-            <div>
+            <div class="flex flex--col">
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
                 <button class="btn">Explorer nos restaurants</button>
             </div>
         </section>
         <section>
-            <h1>Fonctionnement</h1>
-            <div>
-                <div>
+            <h1 class="flex-align--center">Fonctionnement</h1>
+            <div class="flex flex--col flex-align--center">
+                <div class="flex flex--row">
                     <p>1</p>
-                </div>
-                <div>
                     <i class="fas fa-mobile-alt"></i>
                     <p>Choisissez un restaurant</p>
                 </div>
-            </div>
-            <div>
-                <div>
+                <div class="flex flex--row">
                     <p>2</p>
-                </div>
-                <div>
                     <i class="fas fa-list-ul"></i>
                     <p>Composez votre menu</p>
                 </div>
-            </div>
-            <div>
-                <div>
+                <div class="flex flex--row">
                     <p>3</p>
-                </div>
-                <div>
                     <i class="fas fa-store"></i>
                     <p>Dégustez au restaurant</p>
                 </div>
@@ -64,8 +58,8 @@
                         <p>Nouveau</p>
                     </div>
                 </div>
-                <div class="card__body flex-row">
-                    <div class="flex-col">
+                <div class="card__body flex--row">
+                    <div class="flex--col">
                         <p>La palette du goût</p>
                         <p>Ménilmontant</p>
                     </div>
@@ -88,4 +82,5 @@
         <a href="mailto:votrenom@bidule.com">Contact</a>
     </footer>
 </body>
+
 </html>
