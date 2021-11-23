@@ -1,0 +1,13 @@
+.place{
+    width: $full;
+    height: 45px;
+    background-color:rgb(235, 235, 235);
+    & strong, & .fa-map-marker-alt{
+    position:relative;
+    left:-5%;
+    }
+    & .fa-map-marker-alt{
+
+        margin-right: 15px;
+        }
+}
