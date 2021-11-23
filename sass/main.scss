@@ -4,17 +4,4 @@
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-
-.flex{
-display: flex;
-    &--row{
-    flex-direction:row;
-    }
-    &--col{
-    flex-direction:column;
-    }
-    &-align--center{
-    align-items: center;
-    }
-}
-
+@import "./pages/index";

@@ -6,7 +6,7 @@ h1{
     font-family: 'Shrikhand', sans-serif;
 }
 
-p{
+p, strong{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -23,5 +23,6 @@ p{
         }
         &-align--center{
         align-items: center;
+        text-align: center;
         }
     }
