@@ -1,4 +1,4 @@
 .logo{
-    margin: 10px;
-    margin-bottom:15px;
+    margin: nth($spacing,1);
+    margin-bottom: nth($spacing,2);
 }
