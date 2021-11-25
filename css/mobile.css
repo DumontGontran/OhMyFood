@@ -15,7 +15,7 @@
 .infos {
   padding-top: 45px;
   margin-bottom: 45px;
-  background-color: #f0f0f0;
+  background-color: whitesmoke;
 }
 .infos strong {
   font-size: 28px;
@@ -26,24 +26,20 @@
   font-size: 18px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 30px;
-}
-.infos .btn {
-  background: linear-gradient(to left top, #9356DC, #FF79DA);
-  border: 0px solid transparent;
-  border-radius: 30px 30px 30px 30px;
-  width: 66%;
-  height: 60px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  filter: blur(0.5px);
-  margin-bottom: 45px;
 }
 
 .important {
   margin-left: 20px;
   font-size: 24px;
+  font-weight: bold;
+}
+
+.primary-container {
+  height: 350px;
+  margin-top: 45px;
+}
+.primary-container .secondary-container {
+  height: 1000px;
 }
 
 * {
@@ -73,6 +69,58 @@ p, strong {
 .flex-align--center {
   align-items: center;
   text-align: center;
+}
+
+.btn {
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  border: 0px solid transparent;
+  border-radius: 30px 30px 30px 30px;
+  width: 66%;
+  height: 60px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  filter: blur(0.5px);
+  margin-bottom: 45px;
+}
+.btn__operation {
+  position: relative;
+  width: 85%;
+  height: 60px;
+  border: 0px solid grey;
+  border-radius: 15px 15px 15px 15px;
+  background-color: whitesmoke;
+  box-shadow: 0px 5px 15px lightgrey;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.btn__operation:hover {
+  background-color: #fff0ff;
+}
+.btn__operation:hover .fa-mobile-alt, .btn__operation:hover .fa-list-ul, .btn__operation:hover .fa-store {
+  color: #9356DC;
+}
+.btn__operation span {
+  position: relative;
+  top: 17px;
+  left: -12px;
+  padding-top: 4px;
+  width: 25px;
+  height: 25px;
+  border: 0px solid transparent;
+  border-radius: 45px 45px 45px 45px;
+  background-color: #9356DC;
+  color: white;
+  font-size: 12px;
+}
+.btn__operation .fa-mobile-alt, .btn__operation .fa-list-ul, .btn__operation .fa-store {
+  padding-left: 15px;
+  padding-right: 20px;
+  color: grey;
+}
+.btn__operation p {
+  padding-top: 5px;
+  font-weight: bold;
 }
 
 .logo {
