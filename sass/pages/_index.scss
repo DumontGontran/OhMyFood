@@ -15,7 +15,7 @@
 .infos{
     padding-top: nth($spacing, 5);
     margin-bottom: nth($spacing, 5);
-    background-color:rgb(240,240,240);
+    background-color:rgb(245,245,245);
     & strong{
         font-size: nth($size, 5);
         margin-left: nth($spacing, 4);
@@ -25,23 +25,20 @@
         font-size: nth($size, 2);
         margin-left: nth($spacing, 1);
         margin-right: nth($spacing, 1);
-        margin-bottom: nth($spacing, 4);
-    }
-    & .btn{
-        background: linear-gradient(to left top,$primary-color ,$secondary-color);
-        border: 0px solid transparent;
-        border-radius: 30px 30px 30px 30px;
-        width: 66%;
-        height:nth($spacing, 6);
-        color: white;
-        font-weight: bold;
-        font-size:nth($size, 2);
-        filter:blur(0.5px);
-        margin-bottom: nth($spacing, 5);
+        
     }
 }
 
 .important{
     margin-left:nth($spacing, 3);
     font-size:nth($size, 4);
+    font-weight:bold;
+}
+
+.primary-container{
+    height:350px;
+    margin-top:45px;
+    & .secondary-container{
+        height:1000px;
+    }
 }
