@@ -6,6 +6,12 @@
     & strong, & .fa-map-marker-alt{
     position:relative;
     left:-5%;
+    @media screen and (min-width:580px) and (max-width:1024px){
+        left:-2.5%;
+    }
+    @media screen and (min-width:1024px) {
+        left:0;
+    }
     }
     & .fa-map-marker-alt{
         margin-right: nth($spacing, 2);

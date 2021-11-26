@@ -8,6 +8,16 @@
   position: relative;
   left: -5%;
 }
+@media screen and (min-width: 580px) and (max-width: 1024px) {
+  .place strong, .place .fa-map-marker-alt {
+    left: -2.5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .place strong, .place .fa-map-marker-alt {
+    left: 0;
+  }
+}
 .place .fa-map-marker-alt {
   margin-right: 15px;
 }
