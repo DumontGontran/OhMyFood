@@ -40,7 +40,7 @@
 
 .secondary-container {
   background-color: whitesmoke;
-  height: 500px;
+  height: 1330px;
   padding-top: 45px;
 }
 .secondary-container .important {
@@ -92,6 +92,7 @@ h1 {
   font-weight: bold;
   font-size: 18px;
   filter: blur(0.5px);
+  cursor: pointer;
   margin-bottom: 45px;
 }
 .btn__operation {
@@ -164,6 +165,11 @@ h1 {
   width: 104%;
   height: 270px;
   transform: translate(-43%, -40%);
+}
+.card__img--zoom img {
+  position: absolute;
+  top: 17px;
+  height: 460px;
 }
 .card__img .card__new {
   position: absolute;
