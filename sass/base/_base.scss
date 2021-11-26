@@ -10,19 +10,28 @@ h1{
 .flex{
     display: flex;
         &--row{
-        flex-direction:row;
+            flex-direction:row;
         }
         &--col{
-        flex-direction:column;
+            flex-direction:column;
         }
-        &-justify--center{
-            justify-content:center;
+        &-justify
+        {
+            &--center{
+                justify-content:center;
+            }
+            &--between{
+                justify-content: space-between;
+            }
         }
-        &-align--center{
-        align-items: center;
-        text-align: center;
+        &-items{
+            &--center{
+            align-items: center;
+            }
         }
-        &-between{
-            justify-content: space-between;
+        &-text{
+            &--center{
+                text-align:center;
+            }
         }
     }
