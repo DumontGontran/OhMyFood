@@ -28,6 +28,11 @@
             height:270px;
             transform: translate(-43%,-40%);
         }
+        &--zoom img{
+            position:absolute;
+            top:17px;
+            height:460px;
+        }
         & .card__new{
             position:absolute;
             top:5%;
