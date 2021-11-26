@@ -9,6 +9,7 @@
     font-weight: bold;
     font-size:nth($size, 2);
     filter:blur(0.5px);
+    cursor:pointer;
     margin-bottom: nth($spacing, 5);
     &__operation{
         position:relative;
