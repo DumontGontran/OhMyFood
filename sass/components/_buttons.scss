@@ -3,6 +3,7 @@
     border: 0px solid transparent;
     border-radius: 30px 30px 30px 30px;
     width: 66%;
+    max-width:350px;
     height:nth($spacing, 6);
     color: white;
     font-weight: bold;
@@ -12,6 +13,7 @@
     &__operation{
         position:relative;
         width: 85%;
+        max-width:350px;
         height:60px;
         border: 0px solid grey;
         border-radius: 15px 15px 15px 15px;
