@@ -1,0 +1,60 @@
+.secondary-container{ 
+    & a{
+    text-decoration: none;
+    color: black;
+    }
+    & .card-container{
+        margin-bottom:nth($spacing,2);
+    }
+}
+
+.card{
+    width: 350px;
+    height:280px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 3px 15px rgb(200, 200, 200);
+    &__img{
+        width:349px;
+        height:600px;
+        position:relative;
+        overflow:hidden;
+        border-radius: 15px 15px 0px 0px;
+        & img{
+            position:absolute;
+            top:21%;
+            left:43%;
+            width:104%;
+            height:270px;
+            transform: translate(-43%,-40%);
+        }
+        & .card__new{
+            position:absolute;
+            top:5%;
+            left: 65%;
+            width:30%;
+            height:35px;
+            color: rgb(0, 169, 124);
+            background-color:$tertiary-color;
+            font-weight: 600;
+            border-radius: 3px 3px 3px 3px;
+        }
+    }
+    &__body{
+       padding-top:20px;
+       padding-left: 15px;
+        & span{
+            font-size: 18px;
+           font-weight: bold;
+        }
+        & .fa-heart{
+            font-size: 28px;
+            padding-bottom: 35px;
+            padding-right: 20px;
+        }
+        & p{ 
+            font-size: 18px;
+            margin-top:5px;
+        }
+    }
+}
