@@ -2,7 +2,6 @@
   "name": "dumontgontran_3_18112021",
   "version": "1.0.0",
   "description": "Projet 3 Openclassrooms",
-  "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/mobile.css"
   },
