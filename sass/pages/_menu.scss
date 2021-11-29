@@ -1,0 +1,49 @@
+.fa-arrow-left {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size:nth($size,3);
+    color:black;
+}
+
+.menu {
+    background-color: white;
+    height: 1400px;
+    & img {
+        max-width: 375px;
+        height: 300px;
+    }
+    &__title {
+        position: relative;
+        top: -60px;
+        background-color: rgb(245, 245, 245);
+        border-radius: 45px 45px 0 0;
+        width: 375px;
+        max-width: 375px;
+        & h1 {
+            font-size: nth($size, 5);
+            margin-top: nth($spacing, 4);
+            margin-right: nth($spacing, 4);
+        }
+        & .fa-heart {
+            font-size: nth($size, 5);
+            margin-top: nth($spacing, 3);
+            margin-right: nth($spacing, 3);
+        }
+    }
+    & .important {
+        margin-top: nth($spacing, 3);
+        margin-right: 295px;
+        margin-bottom: nth($spacing, 2);
+        width: 40px;
+        height: 25px;
+        border-bottom: 3px solid $tertiary-color;
+    }
+    & section {
+        position: relative;
+        top: -60px;
+        width: 375px;
+        max-width: 375px;
+        background-color: rgb(245, 245, 245);
+    }
+}
