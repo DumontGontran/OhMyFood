@@ -1,38 +1,40 @@
-.btn{
-    background: linear-gradient(to left top,$primary-color ,$secondary-color);
+.btn {
+    background: linear-gradient(to left top, $primary-color, $secondary-color);
     border: 0px solid transparent;
     border-radius: 30px 30px 30px 30px;
-    width: 66%;
-    max-width:350px;
-    height:nth($spacing, 6);
+    width: 60%;
+    max-width: 350px;
+    height: nth($spacing, 6);
     color: white;
     font-weight: bold;
-    font-size:nth($size, 2);
-    filter:blur(0.5px);
-    cursor:pointer;
+    font-size: nth($size, 2);
+    filter: blur(0.1px);
+    cursor: pointer;
     margin-bottom: nth($spacing, 5);
-    &__operation{
-        position:relative;
+    &__operation {
+        position: relative;
         width: 85%;
-        max-width:350px;
-        height:60px;
+        max-width: 350px;
+        height: 60px;
         border: 0px solid grey;
         border-radius: 15px 15px 15px 15px;
-        background-color:rgb(245,245,245);
+        background-color: rgb(245, 245, 245);
         box-shadow: 0px 5px 15px lightgrey;
-        margin-top:nth($spacing,3);
-        margin-bottom:5px;
-        &:hover{
+        margin-top: nth($spacing, 3);
+        margin-bottom: 5px;
+        &:hover {
             background-color: rgb(255, 240, 255);
-            & .fa-mobile-alt,& .fa-list-ul,& .fa-store{
-                color:$primary-color;
+            & .fa-mobile-alt,
+            & .fa-list-ul,
+            & .fa-store {
+                color: $primary-color;
+            }
         }
-    }
-        & span{
-            position:relative;
-            top:17px;
+        & span {
+            position: relative;
+            top: 17px;
             left: -12px;
-            padding-top:4px;
+            padding-top: 4px;
             width: 25px;
             height: 25px;
             border: 0px solid transparent;
@@ -41,14 +43,54 @@
             color: white;
             font-size: 12px;
         }
-        & .fa-mobile-alt,& .fa-list-ul,& .fa-store{
-            padding-left:nth($spacing, 2);
-            padding-right:nth($spacing, 3);
+        & .fa-mobile-alt,
+        & .fa-list-ul,
+        & .fa-store {
+            padding-left: nth($spacing, 2);
+            padding-right: nth($spacing, 3);
             color: grey;
         }
-        & p{
-            padding-top:5px;
-            font-weight:bold;
+        & p {
+            padding-top: 5px;
+            font-weight: bold;
+        }
+        &--menu {
+            position: unset;
+            width: 95%;
+            max-width: 350px;
+            height: 70px;
+            border: 0px solid grey;
+            border-radius: 15px 15px 15px 15px;
+            background-color: white;
+            box-shadow: 0px 5px 15px lightgrey;
+            margin-bottom: nth($spacing, 2);
+            & .menu {
+                &__text {
+                    margin-left: nth($spacing, 2);
+                    & span {
+                        font-size: nth($size, 2);
+                        font-weight: bold;
+                        padding-top: nth($spacing, 1);
+                    }
+                    & p {
+                        font-size: nth($size, 1);
+                        margin-top: nth($spacing, 1);
+                    }
+                }
+                &__price {
+                    font-weight: bold;
+                    margin-top: 40px;
+                    margin-right: nth($spacing, 3);
+                }
+            }
         }
     }
+}
+
+.menu .btn{
+    width:200px;
+    height: 55px;
+    font-weight:normal;
+    margin-top:nth($spacing,4);
+    margin-bottom:nth($spacing, 6);
 }
