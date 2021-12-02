@@ -19,6 +19,9 @@ h1 {
 .flex-justify--center {
   justify-content: center;
 }
+.flex-justify--right {
+  justify-content: flex-end;
+}
 .flex-justify--between {
   justify-content: space-between;
 }
@@ -92,24 +95,31 @@ h1 {
 }
 
 .fa-arrow-left {
-  position: absolute;
-  top: 20px;
-  left: 40px;
+  position: relative;
+  left: -50px;
   font-size: 21px;
   color: black;
 }
 
+form {
+  height: 1050px;
+}
+
 .menu {
   background-color: white;
-  height: 1400px;
+  height: 1411px;
 }
-.menu img {
+.menu__img {
   max-width: 375px;
   height: 300px;
+  overflow: hidden;
+}
+.menu__img img {
+  width: 410px;
 }
 .menu__title {
   position: relative;
-  top: -60px;
+  top: -40px;
   background-color: whitesmoke;
   border-radius: 45px 45px 0 0;
   width: 375px;
@@ -135,7 +145,7 @@ h1 {
 }
 .menu section {
   position: relative;
-  top: -60px;
+  top: -40px;
   width: 375px;
   max-width: 375px;
   background-color: whitesmoke;
@@ -205,6 +215,7 @@ h1 {
   background-color: white;
   box-shadow: 0px 5px 15px lightgrey;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 .btn__operation--menu .menu__text {
   margin-left: 15px;
@@ -220,6 +231,8 @@ h1 {
 }
 .btn__operation--menu .menu__price {
   font-weight: bold;
+}
+.btn__operation--menu .menu__price span {
   margin-top: 40px;
   margin-right: 20px;
 }
@@ -230,6 +243,22 @@ h1 {
   font-weight: normal;
   margin-top: 30px;
   margin-bottom: 60px;
+}
+
+label {
+  width: 375px;
+}
+label .menu__text span, label .menu__text p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+input {
+  display: none;
+}
+input:checked {
+  display: block;
 }
 
 .secondary-container a {
