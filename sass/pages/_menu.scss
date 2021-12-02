@@ -10,6 +10,9 @@ form{
 .menu {
     background-color: white;
     height: 1411px;
+    &--2{
+    height: 1517px;
+    }
     &__img {
         max-width:375px;
         height:300px;
