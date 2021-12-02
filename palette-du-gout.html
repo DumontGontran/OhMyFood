@@ -20,7 +20,7 @@
         </div>
     </header>
     <main class="flex flex--col flex-items--center menu">
-        <div class="flex flex-justify--center">
+        <div class="flex flex-justify--center menu__img">
             <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="MÉNILMONTANT" />
         </div>
         <div class="flex flex--row flex-justify--center menu__title">
@@ -28,8 +28,10 @@
             <i class="flex flex-items--center far fa-heart"></i>
         </div>
 
+        <form>
         <section class="flex flex--col flex-items--center">
             <span class="important">ENTRÉES</span>
+            <label for="entrée1" class="flex flex-justify--center">
             <div class="flex flex--row flex-justify--between btn__operation--menu">
                 <div class="flex flex--col menu__text">
                     <span>Fricassée d'escargot</span>
@@ -37,8 +39,11 @@
                 </div>
                 <div class="flex menu__price">
                     <span>25€</span>
+                    <input name="entrée1" id="entrée1" type="checkbox">
                 </div>
             </div>
+            </label>
+            <label for="entrée2" class="flex flex-justify--center">
             <div class="flex flex--row flex-justify--between btn__operation--menu">
                 <div class="flex flex--col menu__text">
                     <span>Foies gras de canard mi-cuit</span>
@@ -46,8 +51,11 @@
                 </div>
                 <div class="flex menu__price">
                     <span>35€</span>
+                    <input name="entrée2" id="entrée2" type="checkbox">
                 </div>
             </div>
+            </label>
+            <label for="entrée3" class="flex flex-justify--center">
             <div class="flex flex--row flex-justify--between btn__operation--menu">
                 <div class="flex flex--col menu__text">
                     <span>Oeuf au plat</span>
@@ -55,70 +63,91 @@
                 </div>
                 <div class="flex menu__price">
                     <span>20€</span>
+                    <input name="entrée3" id="entrée3" type="checkbox">
                 </div>
             </div>
+            </label>
         </section>
         <section class="flex flex--col flex-items--center">
-            <span class="important">ENTRÉES</span>
+            <span class="important">PLATS</span>
+            <label for="plat1" class="flex flex-justify--center">
             <div class="flex flex--row flex-justify--between btn__operation--menu">
                 <div class="flex flex--col menu__text">
-                    <span>Fricassée d'escargot</span>
-                    <p>Au piment d'espelette</p>
+                    <span>Filet de boeuf aux herbes</span>
+                    <p>Accompagné de sa ribambelle de légu...</p>
                 </div>
                 <div class="flex menu__price">
-                    <span>25€</span>
+                    <span>40€</span>
+                    <input name="plat1" id="plat1" type="checkbox">
                 </div>
             </div>
+        </label>
+        <label for="plat2" class="flex flex-justify--center">
             <div class="flex flex--row flex-justify--between btn__operation--menu">
                 <div class="flex flex--col menu__text">
-                    <span>Foies gras de canard mi-cuit</span>
-                    <p>Et ses copeaux de truffe noire</p>
+                    <span>Parmentier de queue de boeuf</span>
+                    <p>À la truffe noire sur sa purée de panais</p>
                 </div>
                 <div class="flex menu__price">
                     <span>35€</span>
+                    <input name="plat2" id="plat2" type="checkbox">
                 </div>
             </div>
+        </label>
+        <label for="plat3" class="flex flex-justify--center">
             <div class="flex flex--row flex-justify--between btn__operation--menu">
                 <div class="flex flex--col menu__text">
-                    <span>Oeuf au plat</span>
-                    <p>Assaisonné à la truffe sur lit de....</p>
+                    <span>Filet de Turbot</span>
+                    <p>Aux agrumes</p>
                 </div>
                 <div class="flex menu__price">
-                    <span>20€</span>
+                    <span>44€</span>
+                    <input name="plat3" id="plat3" type="checkbox">
                 </div>
             </div>
+        </label>
         </section>
         <section class="flex flex--col flex-items--center">
-            <span class="important">ENTRÉES</span>
+            <span class="important">DESSERTS</span>
+            <label for="dessert1" class="flex flex-justify--center">
             <div class="flex flex--row flex-justify--between btn__operation--menu">
                 <div class="flex flex--col menu__text">
-                    <span>Fricassée d'escargot</span>
-                    <p>Au piment d'espelette</p>
+                    <span>Paris-Brest</span>
+                    <p>Revisité</p>
                 </div>
                 <div class="flex menu__price">
-                    <span>25€</span>
+                    <span>18€</span>
+                    <input name="dessert1" id="dessert1" type="checkbox">
                 </div>
             </div>
+            </label>
+            <label for="dessert2" class="flex flex-justify--center">
             <div class="flex flex--row flex-justify--between btn__operation--menu">
                 <div class="flex flex--col menu__text">
-                    <span>Foies gras de canard mi-cuit</span>
-                    <p>Et ses copeaux de truffe noire</p>
+                    <span>Macaron au chocolat d'exception</span>
+                    <p>Et glace à la vanille de Madagascar</p>
                 </div>
                 <div class="flex menu__price">
-                    <span>35€</span>
+                    <span>22€</span>
+                    <input name="dessert2" id="dessert2" type="checkbox">
                 </div>
             </div>
+            </label>
+            <label for="dessert3" class="flex flex-justify--center">
             <div class="flex flex--row flex-justify--between btn__operation--menu">
                 <div class="flex flex--col menu__text">
-                    <span>Oeuf au plat</span>
-                    <p>Assaisonné à la truffe sur lit de....</p>
+                    <span>Mousse au chocolat</span>
+                    <p>Au piment d'espelette et à la truffe noire</p>
                 </div>
                 <div class="flex menu__price">
-                    <span>20€</span>
+                    <span>23€</span>
+                    <input name="dessert3" id="dessert3" type="checkbox">
                 </div>
             </div>
-            <button class="btn">Commmander</button>
+            </label>
+            <button class="btn" type="submit" id="submit">Commmander</button>
         </section>
+        </form>
     </main>
     <footer class="flex flex--col">
         <h1>ohmyfood</h1>

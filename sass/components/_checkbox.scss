@@ -1,0 +1,17 @@
+label{
+    width:375px;
+    & .menu__text{
+       & span, & p{
+           white-space: nowrap;
+           overflow:hidden;
+           text-overflow:ellipsis;
+       }
+    }
+}
+
+input{
+    display:none;
+    &:checked{
+        display:block;
+    }
+}

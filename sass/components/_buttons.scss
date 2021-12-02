@@ -64,6 +64,7 @@
             background-color: white;
             box-shadow: 0px 5px 15px lightgrey;
             margin-bottom: nth($spacing, 2);
+            cursor:pointer;
             & .menu {
                 &__text {
                     margin-left: nth($spacing, 2);
@@ -79,18 +80,22 @@
                 }
                 &__price {
                     font-weight: bold;
-                    margin-top: 40px;
-                    margin-right: nth($spacing, 3);
+                    & span{
+                        margin-top:40px;
+                        margin-right:nth($spacing,3);
+                    }
                 }
             }
         }
     }
 }
 
-.menu .btn{
+.menu{ 
+    & .btn{
     width:200px;
     height: 55px;
     font-weight:normal;
     margin-top:nth($spacing,4);
     margin-bottom:nth($spacing, 6);
+}
 }
