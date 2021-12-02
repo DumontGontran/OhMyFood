@@ -1,21 +1,26 @@
 .fa-arrow-left {
-    position: absolute;
-    top: 20px;
-    left: 40px;
-    font-size:nth($size,3);
-    color:black;
+    position: relative;
+    left: -50px;
+    font-size: nth($size, 3);
+    color: black;
 }
-
+form{
+    height:1050px;
+}
 .menu {
     background-color: white;
-    height: 1400px;
-    & img {
-        max-width: 375px;
-        height: 300px;
+    height: 1411px;
+    &__img {
+        max-width:375px;
+        height:300px;
+        overflow: hidden;
+        & img {
+            width:410px;
+        }
     }
     &__title {
         position: relative;
-        top: -60px;
+        top: -40px;
         background-color: rgb(245, 245, 245);
         border-radius: 45px 45px 0 0;
         width: 375px;
@@ -41,7 +46,7 @@
     }
     & section {
         position: relative;
-        top: -60px;
+        top: -40px;
         width: 375px;
         max-width: 375px;
         background-color: rgb(245, 245, 245);
