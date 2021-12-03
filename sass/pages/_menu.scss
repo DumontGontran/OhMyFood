@@ -31,12 +31,19 @@ form{
         & h1 {
             font-size: nth($size, 5);
             margin-top: nth($spacing, 4);
-            margin-right: nth($spacing, 4);
+            margin-left: nth($spacing, 3);
         }
         & .fa-heart {
             font-size: nth($size, 5);
             margin-top: nth($spacing, 3);
-            margin-right: nth($spacing, 3);
+            margin-right: nth($spacing, 4);
+            cursor: pointer;
+            font-weight:normal;
+            transition: font-weight 1s, color 1s linear;
+            &:hover{
+                color: $secondary-color;
+                font-weight: bolder;
+            }
         }
     }
     & .important {
