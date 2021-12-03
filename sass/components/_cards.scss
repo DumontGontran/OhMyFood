@@ -56,6 +56,12 @@
             font-size: 28px;
             padding-bottom: 35px;
             padding-right: 20px;
+            font-weight:normal;
+            transition: font-weight 1s, color 1s linear;
+            &:hover{
+                color: $secondary-color;
+                font-weight: bolder;
+            }
         }
         & p{ 
             font-size: 18px;
