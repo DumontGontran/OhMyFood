@@ -22,6 +22,10 @@
     padding-top: nth($spacing, 5);
     margin-bottom: nth($spacing, 5);
     background-color:rgb(245,245,245);
+    & a{
+        display:contents;
+        width:350px;
+    }
     & strong{
         font-size: nth($size, 5);
         margin-left: nth($spacing, 4);
@@ -39,6 +43,7 @@
     height:340px;
     margin-top:nth($spacing,5);
     & .important{
+        margin-top:0;
         margin-right:155px;
         font-size:nth($size, 4);
         font-weight:bold;
@@ -49,6 +54,7 @@
     height:1330px;
     padding-top: nth($spacing, 5);
     & .important{
+        margin-top:0;
         margin-right:205px;
         margin-bottom:nth($spacing,4);
         font-size:nth($size, 4);
