@@ -29,6 +29,84 @@ h1 {
   text-align: center;
 }
 
+@keyframes load {
+  from {
+    z-index: 1;
+    opacity: 1;
+  }
+  70% {
+    z-index: 1;
+    opacity: 1;
+  }
+  99% {
+    z-index: 1;
+  }
+  to {
+    z-index: -9999;
+    opacity: 0;
+  }
+}
+@keyframes load__ellipse {
+  from {
+    opacity: 0;
+    background-color: transparent;
+  }
+  50% {
+    background-color: #99E2D0;
+    opacity: 1;
+  }
+  to {
+    background-color: transparent;
+    opacity: 1;
+  }
+}
+@keyframes load__text {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  30% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  40% {
+    transform: scaleX(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+.loader {
+  position: fixed;
+  z-index: -9999;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  opacity: 0;
+  animation: load 3s ease-in;
+}
+.loader__ellipse {
+  position: relative;
+  left: 110px;
+  min-width: 300px;
+  height: 100px;
+  background-color: transparent;
+  border: 10px solid #99E2D0;
+  border-radius: 45px 45px 45px 45px;
+  opacity: 0;
+  animation: load__ellipse 0.6s infinite forwards alternate;
+}
+.loader__text {
+  position: relative;
+  left: -160px;
+  content: url("../images/logo/ohmyfood.png");
+  height: 40px;
+  opacity: 0;
+  transform: scaleX(1);
+  animation: load__text 1s linear forwards;
+}
+
 .place {
   width: 100%;
   height: 45px;
