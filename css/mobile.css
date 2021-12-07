@@ -175,8 +175,14 @@ form {
   font-weight: bold;
   font-size: 18px;
   filter: blur(0.1px);
+  filter: brightness(1);
   cursor: pointer;
   margin-bottom: 45px;
+  transition: 1s;
+}
+.btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 1px 3px 6px #9999;
 }
 .btn__operation {
   position: relative;

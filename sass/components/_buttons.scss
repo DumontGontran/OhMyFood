@@ -9,8 +9,14 @@
     font-weight: bold;
     font-size: nth($size, 2);
     filter: blur(0.1px);
+    filter: brightness(1);
     cursor: pointer;
     margin-bottom: nth($spacing, 5);
+    transition: 1s;
+    &:hover{
+        filter: brightness(1.1);
+        box-shadow: 1px 3px 6px #9999;
+    }
     &__operation {
         position: relative;
         width: 85%;
