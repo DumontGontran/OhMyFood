@@ -88,7 +88,7 @@ h1 {
 }
 .loader__ellipse {
   position: relative;
-  left: 110px;
+  left: 70px;
   min-width: 300px;
   height: 100px;
   background-color: transparent;
@@ -97,10 +97,15 @@ h1 {
   opacity: 0;
   animation: load__ellipse 0.6s infinite forwards alternate;
 }
-.loader__text {
+.loader__text::after {
+  display: block;
   position: relative;
-  left: -160px;
-  content: url("../images/logo/ohmyfood.png");
+  left: -190px;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 40px;
+  transform-origin: center center;
+  content: "Ohmyfood";
+  width: 160px;
   height: 40px;
   opacity: 0;
   transform: scaleX(1);
@@ -316,19 +321,15 @@ form {
 }
 .btn__operation--menu .menu__text {
   margin-left: 15px;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .btn__operation--menu .menu__text span {
   font-size: 18px;
   font-weight: bold;
   padding-top: 10px;
-  text-overflow: ellipsis;
 }
 .btn__operation--menu .menu__text p {
   font-size: 15px;
   margin-top: 10px;
-  text-overflow: ellipsis;
 }
 .btn__operation--menu .menu__price {
   font-weight: bold;
@@ -473,6 +474,7 @@ footer {
   background-color: #323232;
   color: white;
   padding-left: 20px;
+  padding-right: 180px;
   height: 220px;
 }
 footer h1 {
