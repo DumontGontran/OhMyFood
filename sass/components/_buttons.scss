@@ -74,18 +74,14 @@
             & .menu {
                 &__text {
                     margin-left: nth($spacing, 2);
-                    white-space:nowrap;
-                    overflow:hidden;
                     & span {
                         font-size: nth($size, 2);
                         font-weight: bold;
                         padding-top: nth($spacing, 1);
-                        text-overflow:ellipsis;
                     }
                     & p {
                         font-size: nth($size, 1);
                         margin-top: nth($spacing, 1);
-                        text-overflow:ellipsis;
                     }
                 }
                 &__price {
