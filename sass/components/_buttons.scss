@@ -78,10 +78,18 @@
                         font-size: nth($size, 2);
                         font-weight: bold;
                         padding-top: nth($spacing, 1);
+                        width:220px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
                     }
                     & p {
                         font-size: nth($size, 1);
                         margin-top: nth($spacing, 1);
+                        width:220px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
                     }
                 }
                 &__price {
