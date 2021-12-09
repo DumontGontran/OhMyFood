@@ -1,0 +1,152 @@
+.loader {
+    position: fixed;
+    z-index: -9999;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left top, $primary-color, $secondary-color);
+    opacity: 0;
+    animation: load 3000ms ease-in;
+    &__ellipse {
+        position: relative;
+        left: 70px;
+        min-width: 300px;
+        height: 100px;
+        background-color: transparent;
+        border: 10px solid $tertiary-color;
+        border-radius: 45px 45px 45px 45px;
+        opacity: 0;
+        animation: load__ellipse 600ms infinite forwards alternate;
+    }
+    &__text::after {
+        display: block;
+        position: relative;
+        left: -190px;
+        font-family: "Shrikhand", sans-serif;
+        font-size: 40px;
+        transform-origin: center center;
+        content: "Ohmyfood";
+        width: 160px;
+        height: 40px;
+        opacity: 0;
+        transform: scaleX(1);
+        animation: load__text 1000ms linear forwards;
+    }
+}
+
+@keyframes load {
+    from {
+        z-index: 1;
+        opacity: 1;
+    }
+    70% {
+        z-index: 1;
+        opacity: 1;
+    }
+    99% {
+        z-index: 1;
+    }
+    to {
+        z-index: -9999;
+        opacity: 0;
+    }
+}
+@keyframes load__ellipse {
+    from {
+        opacity: 0;
+        background-color: transparent;
+    }
+    50% {
+        background-color: $tertiary-color;
+        opacity: 1;
+    }
+    to {
+        background-color: transparent;
+        opacity: 1;
+    }
+}
+@keyframes load__text {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    30% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+    40% {
+        transform: scaleX(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+.btn__operation--menu {
+    opacity: 0;
+    animation: load__food $anim-dur forwards;
+    @for $i from 1 through $num-food {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
+}
+
+@keyframes load__food {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+label {
+    & input:not(:checked) ~ .custom-checkbox {
+        opacity:0;
+        width: 0px;
+        transition: width 250ms, opacity 10ms 140ms;
+        &::after{
+            color:transparent;
+            background-color:transparent;
+            transition: color 140ms 10ms, background-color 140ms 10ms;
+        }
+    }
+    & input:checked ~ .custom-checkbox {
+        opacity: 1;
+        width: 70px;
+        animation: load__checkbox 400ms;
+        &::after {
+            transform: rotate(0turn), translateX(0);
+            animation: load__check 600ms forwards;
+        }
+    }
+}
+
+@keyframes load__checkbox {
+    from {
+        opacity: 0;
+        width: 10px;
+    }
+    10% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+        width: 70px;
+    }
+}
+
+@keyframes load__check {
+    from,17%{
+        opacity: 0;
+        transform: rotate(0turn);
+    }
+    20%{
+        opacity:1;
+    }
+    to {
+        opacity: 1;
+        transform: rotate(1turn);
+    }
+}

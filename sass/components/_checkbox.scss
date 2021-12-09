@@ -17,7 +17,6 @@ label {
             position: absolute;
             top: 17px;
             left: 18px;
-            display: none;
             color: $tertiary-color;
             background-color: white;
             width: 22px;
@@ -29,13 +28,9 @@ label {
             padding-bottom: 0;
         }
     }
-    & input:checked ~ .custom-checkbox {
+    & input:checked ~ .custom-checkbox, & input:not(:checked) ~ .custom-checkbox {
         background-color: $tertiary-color;
         height: 70px;
-        width: 70px;
         border-radius: 0px 15px 15px 0px;
-        &::after {
-            display: block;
-        }
     }
 }

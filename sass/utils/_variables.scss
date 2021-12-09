@@ -5,3 +5,7 @@ $tertiary-color:#99E2D0;
 $full:100%;
 $spacing:10px 15px 20px 30px 45px 60px;
 $size: 15px 18px 21px 24px 28px;
+
+$num-food: 10;
+$anim-dur: 2000ms;
+$anim-delay: $anim-dur / $num-food;
