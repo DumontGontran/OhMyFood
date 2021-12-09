@@ -306,7 +306,7 @@ label input:checked ~ .custom-checkbox {
   animation: load__checkbox 400ms;
 }
 label input:checked ~ .custom-checkbox::after {
-  transform: rotate(0turn), translateX(0);
+  transform: rotate(0turn);
   animation: load__check 600ms forwards;
 }
 
