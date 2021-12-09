@@ -117,7 +117,7 @@ label {
         width: 70px;
         animation: load__checkbox 400ms;
         &::after {
-            transform: rotate(0turn), translateX(0);
+            transform: rotate(0turn);
             animation: load__check 600ms forwards;
         }
     }
