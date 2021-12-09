@@ -415,10 +415,18 @@ label input:checked ~ .custom-checkbox::after {
   font-size: 18px;
   font-weight: bold;
   padding-top: 10px;
+  width: 220px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .btn__operation--menu .menu__text p {
   font-size: 15px;
   margin-top: 10px;
+  width: 220px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .btn__operation--menu .menu__price {
   font-weight: bold;
