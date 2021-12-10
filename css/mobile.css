@@ -432,7 +432,7 @@ label input:checked ~ .custom-checkbox::after {
 }
 .btn__operation--menu .menu__text span {
   padding-top: 10px;
-  width: 220px;
+  width: 210px;
 }
 .btn__operation--menu .menu__price span {
   margin-top: 40px;
@@ -458,8 +458,8 @@ label {
 }
 label input {
   opacity: 0;
-  height: 0;
-  width: 0;
+  height: 0px;
+  width: 0px;
 }
 label .custom-checkbox {
   position: relative;
