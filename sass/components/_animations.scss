@@ -5,7 +5,7 @@
     height: 100vh;
     background: linear-gradient(to left top, $primary-color, $secondary-color);
     opacity: 0;
-    animation: load 3000ms ease-in;
+    animation: load 2500ms ease-in;
     &__ellipse {
         position: relative;
         left: 70px;
@@ -15,7 +15,7 @@
         border: 10px solid $tertiary-color;
         border-radius: 45px 45px 45px 45px;
         opacity: 0;
-        animation: load__ellipse 600ms infinite forwards alternate;
+        animation: load__ellipse 500ms infinite forwards alternate;
     }
     &__text::after {
         display: block;
@@ -29,7 +29,7 @@
         height: 40px;
         opacity: 0;
         transform: scaleX(1);
-        animation: load__text 1000ms linear forwards;
+        animation: load__text 834ms linear forwards;
     }
 }
 
