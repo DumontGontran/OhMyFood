@@ -1,37 +1,31 @@
-*{
+* {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
-h1{
-    font-family: 'Shrikhand', sans-serif;
-}
-
-.flex{
+.flex {
     display: flex;
-        &--row{
-            flex-direction:row;
+    &--row {
+        flex-direction: row;
+    }
+    &--col {
+        flex-direction: column;
+    }
+    &-justify {
+        &--center {
+            justify-content: center;
         }
-        &--col{
-            flex-direction:column;
-        }
-        &-justify
-        {
-            &--center{
-                justify-content:center;
-            }
-            &--between{
-                justify-content: space-between;
-            }
-        }
-        &-items{
-            &--center{
-            align-items: center;
-            }
-        }
-        &-text{
-            &--center{
-                text-align:center;
-            }
+        &--between {
+            justify-content: space-between;
         }
     }
+    &-items {
+        &--center {
+            align-items: center;
+        }
+    }
+    &-text {
+        &--center {
+            text-align: center;
+        }
+    }
+}
