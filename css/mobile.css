@@ -36,15 +36,18 @@ h1 {
   font-weight: bold;
 }
 
-.text16 {
+label .text16 {
   font-size: 16px;
 }
-.text18 {
+label .text18 {
   font-size: 18px;
 }
-.text-overflow--ellipsis {
-  overflow: hidden;
+label .text-overflow--ellipsis {
+  width: 210px;
   white-space: nowrap;
+}
+label:hover .text-overflow--ellipsis {
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -309,22 +312,22 @@ form {
     opacity: 1;
   }
 }
-label input:not(:checked) ~ .custom-checkbox {
+label .custom-checkbox {
   opacity: 0;
   width: 0px;
-  transition: width 250ms, opacity 10ms 140ms;
+  transition: width 400ms, opacity 225ms 25ms;
 }
-label input:not(:checked) ~ .custom-checkbox::after {
+label .custom-checkbox::after {
   color: transparent;
   background-color: transparent;
   transition: color 140ms 10ms, background-color 140ms 10ms;
 }
-label input:checked ~ .custom-checkbox {
+label:hover .custom-checkbox {
   opacity: 1;
   width: 70px;
   animation: load__checkbox 400ms;
 }
-label input:checked ~ .custom-checkbox::after {
+label:hover .custom-checkbox::after {
   transform: rotate(0turn);
   animation: load__check 600ms forwards;
 }
@@ -432,7 +435,6 @@ label input:checked ~ .custom-checkbox::after {
 }
 .btn__operation--menu .menu__text span {
   padding-top: 10px;
-  width: 210px;
 }
 .btn__operation--menu .menu__price span {
   margin-top: 40px;

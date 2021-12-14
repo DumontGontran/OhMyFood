@@ -102,17 +102,17 @@
 }
 
 label {
-    & input:not(:checked) ~ .custom-checkbox {
+    & .custom-checkbox {
         opacity:0;
         width: 0px;
-        transition: width 250ms, opacity 10ms 140ms;
+        transition: width 400ms, opacity 225ms 25ms;
         &::after{
             color:transparent;
             background-color:transparent;
             transition: color 140ms 10ms, background-color 140ms 10ms;
         }
     }
-    & input:checked ~ .custom-checkbox {
+    &:hover .custom-checkbox {
         opacity: 1;
         width: 70px;
         animation: load__checkbox 400ms;

@@ -5,19 +5,26 @@
 h1 {
     font-family: "Shrikhand", sans-serif;
 }
+
 .bold {
     font-weight: bold;
 }
-.text {
-    &16 {
-        font-size: 16px;
+
+label {
+    .text {
+        &16 {
+            font-size: 16px;
+        }
+        &18 {
+            font-size: nth($size, 2);
+        }
+        &-overflow--ellipsis {
+            width: 210px;
+            white-space: nowrap;
+        }
     }
-    &18 {
-        font-size: nth($size, 2);
-    }
-    &-overflow--ellipsis{
+    &:hover .text-overflow--ellipsis {
         overflow: hidden;
-        white-space: nowrap;
         text-overflow: ellipsis;
     }
 }
