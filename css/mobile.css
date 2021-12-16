@@ -1,5 +1,10 @@
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
 }
 
 .flex {
@@ -22,33 +27,6 @@
 }
 .flex-text--center {
   text-align: center;
-}
-
-* {
-  font-family: "Roboto", sans-serif;
-}
-
-h1 {
-  font-family: "Shrikhand", sans-serif;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-label .text16 {
-  font-size: 16px;
-}
-label .text18 {
-  font-size: 18px;
-}
-label .text-overflow--ellipsis {
-  width: 210px;
-  white-space: nowrap;
-}
-label:hover .text-overflow--ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .place {
@@ -119,13 +97,6 @@ label:hover .text-overflow--ellipsis {
   font-weight: bold;
 }
 
-.fa-arrow-left {
-  position: relative;
-  left: -50px;
-  font-size: 21px;
-  color: black;
-}
-
 form {
   height: 1050px;
 }
@@ -160,14 +131,18 @@ form {
 }
 .menu__title .fa-heart {
   font-size: 28px;
-  margin-top: 20px;
   margin-right: 30px;
   cursor: pointer;
   font-weight: normal;
-  transition: font-weight 1s, color 1s linear;
+  transition: all 350ms, margin-top 0ms, font-weight 50ms, color 1000ms;
 }
 .menu__title .fa-heart:hover {
+  margin-top: 28px;
   color: #FF79DA;
+  display: block;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bolder;
 }
 .menu .important {
@@ -184,6 +159,24 @@ form {
   width: 375px;
   max-width: 375px;
   background-color: whitesmoke;
+}
+
+label .bold {
+  font-weight: bold;
+}
+label .text--16 {
+  font-size: 16px;
+}
+label .text--18 {
+  font-size: 18px;
+}
+label .text-overflow--ellipsis {
+  width: 210px;
+  white-space: nowrap;
+}
+label:hover .text-overflow--ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .loader {
@@ -313,21 +306,17 @@ form {
   }
 }
 label .custom-checkbox {
+  overflow: hidden;
   opacity: 0;
   width: 0px;
-  transition: width 400ms, opacity 225ms 25ms;
-}
-label .custom-checkbox::after {
-  color: transparent;
-  background-color: transparent;
-  transition: color 140ms 10ms, background-color 140ms 10ms;
+  transition: width 250ms, opacity 10ms 140ms;
 }
 label:hover .custom-checkbox {
   opacity: 1;
   width: 70px;
   animation: load__checkbox 400ms;
 }
-label:hover .custom-checkbox::after {
+label:hover .custom-checkbox:after {
   transform: rotate(0turn);
   animation: load__check 600ms forwards;
 }
@@ -560,6 +549,12 @@ label input:checked ~ .custom-checkbox, label input:not(:checked) ~ .custom-chec
 .card__body p {
   font-size: 18px;
   margin-top: 5px;
+}
+
+.fa-arrow-left {
+  position: relative;
+  left: -50px;
+  color: black;
 }
 
 .logo {
