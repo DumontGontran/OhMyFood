@@ -316,7 +316,7 @@ label:hover .custom-checkbox {
   width: 70px;
   animation: load__checkbox 400ms;
 }
-label:hover .custom-checkbox:after {
+label:hover .custom-checkbox::after {
   transform: rotate(0turn);
   animation: load__check 600ms forwards;
 }
@@ -540,10 +540,14 @@ label input:checked ~ .custom-checkbox, label input:not(:checked) ~ .custom-chec
   padding-bottom: 35px;
   padding-right: 20px;
   font-weight: normal;
-  transition: font-weight 1s, color 1s linear;
+  transition: all 350ms, margin-top 0ms, font-weight 50ms, color 1000ms;
 }
 .card__body .fa-heart:hover {
   color: #FF79DA;
+  display: block;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bolder;
 }
 .card__body p {
