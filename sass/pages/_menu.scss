@@ -1,12 +1,7 @@
-.fa-arrow-left {
-    position: relative;
-    left: -50px;
-    font-size: nth($size, 3);
-    color: black;
-}
 form{
     height:1050px;
 }
+
 .menu {
     background-color: white;
     height: 1411px;
@@ -35,13 +30,17 @@ form{
         }
         & .fa-heart {
             font-size: nth($size, 5);
-            margin-top: nth($spacing, 3);
             margin-right: nth($spacing, 4);
             cursor: pointer;
             font-weight:normal;
-            transition: font-weight 1s, color 1s linear;
+            transition: all 350ms, margin-top 0ms, font-weight 50ms, color 1000ms;
             &:hover{
+                margin-top: 28px;
                 color: $secondary-color;
+                display: block;
+                background: -webkit-linear-gradient($primary-color, $secondary-color);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
                 font-weight: bolder;
             }
         }
@@ -60,5 +59,27 @@ form{
         width: 375px;
         max-width: 375px;
         background-color: rgb(245, 245, 245);
+    }
+}
+
+label {
+    & .bold {
+        font-weight: bold;
+    }    
+    & .text {
+        &--16 {
+            font-size: 16px;
+        }
+        &--18 {
+            font-size: nth($size, 2);
+        }
+        &-overflow--ellipsis {
+            width: 210px;
+            white-space: nowrap;
+        }
+    }
+    &:hover .text-overflow--ellipsis {
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }

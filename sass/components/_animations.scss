@@ -103,20 +103,16 @@
 
 label {
     & .custom-checkbox {
+        overflow:hidden;
         opacity:0;
         width: 0px;
-        transition: width 400ms, opacity 225ms 25ms;
-        &::after{
-            color:transparent;
-            background-color:transparent;
-            transition: color 140ms 10ms, background-color 140ms 10ms;
-        }
+        transition: width 250ms, opacity 10ms 140ms;
     }
     &:hover .custom-checkbox {
         opacity: 1;
         width: 70px;
         animation: load__checkbox 400ms;
-        &::after {
+        &:after {
             transform: rotate(0turn);
             animation: load__check 600ms forwards;
         }
