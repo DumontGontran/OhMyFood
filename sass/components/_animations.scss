@@ -112,7 +112,7 @@ label {
         opacity: 1;
         width: 70px;
         animation: load__checkbox 400ms;
-        &:after {
+        &::after {
             transform: rotate(0turn);
             animation: load__check 600ms forwards;
         }
