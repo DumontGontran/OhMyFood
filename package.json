@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Projet 3 Openclassrooms",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/mobile.css"
+    "sass": "sass --watch ./sass/main.scss:./css/mobile.css",
+    "prefix": "postcss ./css/mobile.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -11,6 +12,7 @@
   },
   "author": "DumontGontran",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/DumontGontran/DumontGontran_3_18112021/issues"
   },
