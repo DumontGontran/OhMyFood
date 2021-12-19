@@ -1,75 +1,86 @@
-.secondary-container{ 
-    & a{
-    text-decoration: none;
-    color: black;
+.secondary-container {
+    & a {
+        text-decoration: none;
+        color: black;
     }
-    & .card-container{
-        margin-bottom:nth($spacing,2);
+    & .card-container {
+        margin-bottom: nth($spacing, 2);
     }
 }
 
-.card{
+.card {
     width: 350px;
-    height:280px;
+    height: 280px;
     border: 1px solid rgb(235, 235, 235);
     border-radius: 15px 15px 15px 15px;
     box-shadow: 1px 3px 15px rgb(200, 200, 200);
-    &__img{
-        width:349px;
-        height:600px;
-        position:relative;
-        overflow:hidden;
+    &__img {
+        width: 349px;
+        height: 600px;
+        position: relative;
+        overflow: hidden;
         border-radius: 15px 15px 0px 0px;
-        & img{
-            position:absolute;
-            top:21%;
-            left:43%;
-            width:104%;
-            height:270px;
-            transform: translate(-43%,-40%);
+        & img {
+            position: absolute;
+            top: 21%;
+            left: 43%;
+            width: 104%;
+            height: 270px;
+            transform: translate(-43%, -40%);
         }
-        &--zoom img{
-            position:absolute;
-            top:17px;
-            height:460px;
+        &--zoom img {
+            position: absolute;
+            top: 17px;
+            height: 460px;
         }
-        & .card__new{
-            position:absolute;
-            top:5%;
+        & .card__new {
+            position: absolute;
+            top: 5%;
             left: 65%;
-            width:30%;
-            height:35px;
+            width: 30%;
+            height: 35px;
             color: rgb(0, 169, 124);
-            background-color:$tertiary-color;
+            background-color: $tertiary-color;
             font-weight: 600;
             border-radius: 3px 3px 3px 3px;
         }
     }
-    &__body{
-       padding-top:20px;
-       padding-left: 15px;
-        & span{
+    &__body {
+        padding-top: 20px;
+        padding-left: 15px;
+        & span {
             font-size: 18px;
-           font-weight: bold;
+            font-weight: bold;
         }
-        & .fa-heart{
-            font-size: 28px;
-            padding-bottom: 35px;
-            padding-right: 20px;
-            font-weight:normal;
-            transition: all 350ms, margin-top 0ms, font-weight 50ms, color 1000ms;
-            &:hover{
+        & .fa-heart {
+            font-size: nth($size, 5);
+            margin-right: nth($spacing, 1);
+            cursor: pointer;
+            font-weight: normal;
+            &::after {
+                font-family: "Font Awesome 5 Free";
+                content: "\f004";
+                position: relative;
+                top: 18px;
+                left: -28px;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all 1000ms;
+            }
+            &:hover::after {
+                opacity: 1;
                 color: $secondary-color;
                 display: block;
-                background: -webkit-linear-gradient($primary-color, $secondary-color);
+                background: linear-gradient($primary-color, $secondary-color);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 font-weight: bolder;
             }
         }
-        & p{ 
+        & p {
             font-size: 18px;
-            margin-top:5px;
+            margin-top: 5px;
         }
     }
 }
