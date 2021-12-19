@@ -30,9 +30,7 @@
         margin-bottom: 5px;
         &:hover {
             background-color: rgb(255, 240, 255);
-            & .fa-mobile-alt,
-            & .fa-list-ul,
-            & .fa-store {
+            & .fa-mobile-alt, & .fa-list-ul, & .fa-store {
                 color: $primary-color;
             }
         }
@@ -49,9 +47,7 @@
             color: white;
             font-size: 12px;
         }
-        & .fa-mobile-alt,
-        & .fa-list-ul,
-        & .fa-store {
+        & .fa-mobile-alt, & .fa-list-ul, & .fa-store {
             padding-left: nth($spacing, 2);
             padding-right: nth($spacing, 3);
             color: grey;
@@ -102,5 +98,5 @@
     font-weight:normal;
     margin-top:nth($spacing,4);
     margin-bottom:nth($spacing, 6);
-}
+    }
 }
