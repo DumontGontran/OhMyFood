@@ -375,8 +375,8 @@ label:hover .custom-checkbox::after {
   transition: 1s;
 }
 .btn:hover {
-  filter: brightness(1.1);
-  box-shadow: 1px 3px 6px #9999;
+  filter: brightness(1.2);
+  box-shadow: 1px 3px 15px #646464;
 }
 .btn__operation {
   position: relative;
@@ -392,6 +392,7 @@ label:hover .custom-checkbox::after {
 }
 .btn__operation:hover {
   background-color: #fff0ff;
+  box-shadow: 0px 5px 15px #646464;
 }
 .btn__operation:hover .fa-mobile-alt, .btn__operation:hover .fa-list-ul, .btn__operation:hover .fa-store {
   color: #9356DC;
@@ -506,6 +507,9 @@ label input:checked ~ .custom-checkbox, label input:not(:checked) ~ .custom-chec
   border: 1px solid #ebebeb;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 1px 3px 15px #c8c8c8;
+}
+.card:hover {
+  box-shadow: 1px 3px 15px #646464;
 }
 .card__img {
   width: 349px;

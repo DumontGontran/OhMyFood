@@ -14,8 +14,8 @@
     margin-bottom: nth($spacing, 5);
     transition: 1s;
     &:hover{
-        filter: brightness(1.1);
-        box-shadow: 1px 3px 6px #9999;
+        filter: brightness(1.2);
+        box-shadow: 1px 3px 15px rgb(100, 100, 100);
     }
     &__operation {
         position: relative;
@@ -30,6 +30,7 @@
         margin-bottom: 5px;
         &:hover {
             background-color: rgb(255, 240, 255);
+            box-shadow: 0px 5px 15px rgb(100, 100, 100);
             & .fa-mobile-alt, & .fa-list-ul, & .fa-store {
                 color: $primary-color;
             }
