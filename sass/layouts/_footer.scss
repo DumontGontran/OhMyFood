@@ -2,9 +2,9 @@ footer{
     background-color: rgb(50,50,50);
     color: white;
     padding-left: nth($spacing,3);
-    padding-right:150px;
-    height:220px;
-    & h1{
+    padding-right:140px;
+  
+    & h5{
         margin-top:nth($spacing,4);
         margin-bottom:nth($spacing, 3);
         font-size:20px;
