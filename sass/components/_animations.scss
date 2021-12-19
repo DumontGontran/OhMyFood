@@ -8,19 +8,20 @@
     animation: load 2500ms ease-in;
     &__ellipse {
         position: relative;
-        left: 70px;
-        min-width: 300px;
-        height: 100px;
+        left: 77px;
+        min-width: 270px;
+        height: 270px;
         background-color: transparent;
-        border: 10px solid $tertiary-color;
+        border: 10px solid $primary-color;
+        outline: 4px dashed $secondary-color;
         border-radius: 45px 45px 45px 45px;
         opacity: 0;
-        animation: load__ellipse 500ms infinite forwards alternate;
+        animation: load__ellipse 1250ms linear infinite forwards;
     }
     &__text::after {
         display: block;
         position: relative;
-        left: -190px;
+        left: -170px;
         font-family: "Shrikhand", sans-serif;
         font-size: 40px;
         transform-origin: center center;
@@ -54,12 +55,14 @@
     from {
         opacity: 0;
         background-color: transparent;
+        transform: rotate(0turn);
     }
     50% {
         background-color: $tertiary-color;
         opacity: 1;
     }
     to {
+        transform: rotate(1turn);
         background-color: transparent;
         opacity: 1;
     }
