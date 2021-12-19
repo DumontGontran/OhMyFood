@@ -389,6 +389,7 @@ label:hover .custom-checkbox::after {
   box-shadow: 0px 5px 15px lightgrey;
   margin-top: 20px;
   margin-bottom: 5px;
+  transition: 1s;
 }
 .btn__operation:hover {
   background-color: #fff0ff;
@@ -507,6 +508,7 @@ label input:checked ~ .custom-checkbox, label input:not(:checked) ~ .custom-chec
   border: 1px solid #ebebeb;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 1px 3px 15px #c8c8c8;
+  transition: 1s;
 }
 .card:hover {
   box-shadow: 1px 3px 15px #646464;
