@@ -26,7 +26,7 @@
         display:contents;
         width:350px;
     }
-    & strong{
+    & h2{
         font-size: nth($size, 5);
         margin-left: nth($spacing, 4);
         margin-right: nth($spacing, 4);
@@ -42,7 +42,7 @@
 .primary-container{
     height:340px;
     margin-top:nth($spacing,5);
-    & .important{
+    & h3{
         margin-top:0;
         margin-right:155px;
         font-size:nth($size, 4);
@@ -53,7 +53,7 @@
     background-color:rgb(245,245,245);
     height:1330px;
     padding-top: nth($spacing, 5);
-    & .important{
+    & h4{
         margin-top:0;
         margin-right:205px;
         margin-bottom:nth($spacing,4);
